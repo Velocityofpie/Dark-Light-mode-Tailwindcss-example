@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Dark/Light mode</title>
+</head>
+<body class="h-screen flex items-center justify-center px-8 bg-slate-100 dark:bg-slate-900">
+    <div class="max-w-[600px] shadow-md p-6 rounded-md bg-white dark:bg-slate-700 dark:text-white">
+        <div class="flex items-start sm:items-center mb-4">
+            <h1 class="text-4xl flex-1 font-bold"  > Tailwind Dark/light Mode</h1>
+            <button class="absolute top-5 right-5 w-0 h-5 md:w-12 md:h-6 rounded-2xl bg-white flex items-center transition duration-300 focus:outline-none shadow">
+                <div id="switch-toggle" class="w-6 h-6 md:w-7 md:h-7 relative rounded-full transition duration-500 transform bg-yellow-500-translate-x-2 p-1 text-white">
+                    
+                </div>
+            </button>
+            <img class="moon cursor-pointer w-4 " src="../assets/moon.svg" alt=""/>
+            <img class="sun cursor-pointer w-4 display-none text-white" src="../assets/sun.svg" alt=""/>
+        </div>
+        <p class="text-md mb-4">
+            This project is to be and exmaple on how to build in darkmode with tailwindcss if you want to 
+            learn about more documentation about the project click on the button below
+        </p>
+        <button class="py-2 px-4 bg-black text-white rounded-md dark:bg-white dark:text-slate-900">
+            Learn more
+        </button>
+    </div>
+    <script src="./app.js"></script>    
+</body>
+
+</html>
